@@ -65,7 +65,7 @@ class Field:
                     color = "#000000"
                 else:
                     color = "white"
-                self.c.create_rectangle((i - 1) * sizen, (j - 1) * sizem, (i) * sizen, (j) * sizem, fill=color)
+                self.c.create_rectangle((i - 1) * sizen, (j - 1) * sizem, i * sizen, j * sizem, fill=color)
         self.step()
         self.c.after(1000, self.draw)
 
